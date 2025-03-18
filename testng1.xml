@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   
-   <parameter name="Username" value="aharishreddy21@gmail.com"/>
-    <parameter name="Password" value="Hari0909@"/>  
+   
     <classes>
   
       <class name="com.tests.Testing1"/>
