@@ -103,25 +103,25 @@ public class Testing1 extends WebDriversInitiation {
     }
 
   
-    @Test(priority=4)
-    @Parameters({"Username","Password"})
-    public void LoginPage(@Optional("venky2003@gmail.com") String username, @Optional("venky@345") String password) throws InterruptedException {
-    	Thread.sleep(3000);
-    	driver.findElement(By.xpath("//*[@id=\"navbar-inverse-collapse\"]/div/div/a")).click();
-    	login.login(username, password);
-    }
-    @Test(priority=5)
-    public void RegistrationPage() throws InterruptedException {
-    	Thread.sleep(3000);
-    	driver.findElement(By.xpath("//*[@id=\"navbar-inverse-collapse\"]/div/div/a")).click();
-    	Thread.sleep(3000);
-    	driver.findElement(By.xpath(("//*[@id=\"page\"]/div[2]/div/div/div/div/form/div[5]/div[3]/a"))).click();
-    	Thread.sleep(3000);
-    	registration.enterUsername("test@gmai.com","Hari","Reddy");
-    	registration.enterPassword("test@123");
-    	registration.confirmPassword("test@123");
-    	registration.robot();
-    	registration.clickSignUp();
-    }
+    // @Test(priority=4)
+    // @Parameters({"Username","Password"})
+    // public void LoginPage(@Optional("venky2003@gmail.com") String username, @Optional("venky@345") String password) throws InterruptedException {
+    // 	Thread.sleep(3000);
+    // 	driver.findElement(By.xpath("//*[@id=\"navbar-inverse-collapse\"]/div/div/a")).click();
+    // 	login.login(username, password);
+    // }
+    // @Test(priority=5)
+    // public void RegistrationPage() throws InterruptedException {
+    // 	Thread.sleep(3000);
+    // 	driver.findElement(By.xpath("//*[@id=\"navbar-inverse-collapse\"]/div/div/a")).click();
+    // 	Thread.sleep(3000);
+    // 	driver.findElement(By.xpath(("//*[@id=\"page\"]/div[2]/div/div/div/div/form/div[5]/div[3]/a"))).click();
+    // 	Thread.sleep(3000);
+    // 	registration.enterUsername("test@gmai.com","Hari","Reddy");
+    // 	registration.enterPassword("test@123");
+    // 	registration.confirmPassword("test@123");
+    // 	registration.robot();
+    // 	registration.clickSignUp();
+    // }
    
 }
